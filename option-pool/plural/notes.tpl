@@ -1,0 +1,1 @@
+Use `plural watch option-pool` to track the status of your application

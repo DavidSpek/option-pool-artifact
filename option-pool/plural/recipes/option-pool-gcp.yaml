@@ -1,0 +1,25 @@
+name: option-pool-gcp
+description: Installs option-pool on an aws eks cluster
+provider: GCP
+dependencies:
+- repo: bootstrap
+  name: gcp-k8s
+- repo: ingress-nginx
+  name: ingress-nginx-gcp
+- repo: postgres
+  name: gcp-postgres
+- repo: redis
+  name: gcp-redis
+sections:
+- name: option-pool
+  configuration:
+  - name: hostname
+    type: DOMAIN
+    documentation: fqdn on which to deploy your option-pool instance
+  items:
+  - type: TERRAFORM
+    name: gcp
+  - type: HELM
+    name: option-pool-backend
+  - type: HELM
+    name: option-pool-frontend

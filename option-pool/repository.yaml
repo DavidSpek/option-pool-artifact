@@ -1,0 +1,6 @@
+name: option-pool
+description: option-pool deployed on plural
+category: DATA
+private: true
+icon: plural/icons/option-pool.png
+notes: plural/notes.tpl

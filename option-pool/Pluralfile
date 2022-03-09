@@ -1,0 +1,7 @@
+REPO option-pool
+ATTRIBUTES "Option Pool" repository.yaml
+
+TF terraform/*
+HELM helm/*
+RECIPE plural/recipes/*
+TAG plural/tags/**/*
