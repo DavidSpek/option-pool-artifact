@@ -61,7 +61,7 @@ spec:
             {{- end }}
           ports:
             - name: api
-              containerPort: 80
+              containerPort: 8080
               protocol: TCP
           livenessProbe:
             httpGet:
