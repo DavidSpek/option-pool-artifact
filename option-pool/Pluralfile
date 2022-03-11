@@ -1,5 +1,5 @@
 REPO option-pool
-ATTRIBUTES "Option Pool" repository.yaml
+ATTRIBUTES option-pool repository.yaml
 
 TF terraform/*
 HELM helm/*
